@@ -6,9 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use DB;
 
-class test_db extends Controller
+class accounts extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,9 +16,7 @@ class test_db extends Controller
      */
     public function index()
     {
-        $result=DB::select('SELECT * FROM `test_table`');
-
-        return $result;
+        echo "sss";
     }
 
     /**

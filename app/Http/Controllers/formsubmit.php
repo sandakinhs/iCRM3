@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use DB;
+//use App\Http\Controllers\Log;
+
 
 class formsubmit extends Controller
 {
@@ -18,19 +20,20 @@ class formsubmit extends Controller
     {
         $username=$_POST['username'];
         $password=$_POST['password'];
+        $log = new Log();
+        $group = new GroupController();
+        $user = new UserController();
 
 
         session_start();
         $password=md5($password);
 
-//	    Super admin login
+        //Super admin login
         $super_username="s_admin";
         $super_password=md5("iphonik");
 
         if($username == $super_username){
-
             if ($password == $super_password) {
-
                 $_SESSION['user_type'] == "s_admin";   // set user type session
                 return("5");    // return value
             }
@@ -64,24 +67,19 @@ class formsubmit extends Controller
                 ->get();
             //sql query end
 
-            var_dump($query1);
-
             foreach ($query1 as $rew) {
 
                 if ($rew->ip != $ip) {
 
-//                    $this->log_model->add_log("logging attempt 1",$ip,$username);  // add a log
+                    $log->add_log("logging attempt 1",$ip,$username);
                     return ($rew->ip);
 
                 }
 
-//                $sql_l="UPDATE `user_login` SET `user_logout_time`=SYSDATE(), `user_login_status`= '0' WHERE `user_id` = '$re[user_id]' AND `user_login_status` = '1' "	;
-//                $this->db->query($sql_l);
-                echo date('Y-m-d H:i:s');
                 //sql query
                 DB::table('user_login')
                     ->where('user_id', $re->user_id)
-                    ->update(['user_logout_time' => DATE()],['user_login_status' => 0]);
+                    ->update(['user_logout_time' => DATE('Y-m-d H:i:s'),'user_login_status' => 0]);
                 //sql query end
 
 
@@ -89,54 +87,63 @@ class formsubmit extends Controller
 
         } //end of if
 
-            dd(DB::getQueryLog());
-            die();
 
+            foreach($group->viewusergroups() as $row1){
 
-            $this->load->model('group_model');
+                $_SESSION['user_groups'][] = $row1->group_id; 	// add user groups to session
 
-            foreach($this->group_model->viewusergroups() as $row1){
+//                add user privileges to sessions
+                foreach($user->user_privilages($row1->group_id) as $row2) {
 
-                $_SESSION['user_groups'][] = $row1['group_id']; 	// add user groups to session
-
-                $this->load->model('user_model');
-
-                foreach($this->user_model->user_privilages($row1['group_id']) as $row2) {
-
-                    $_SESSION['_' . $row1['group_id']]['call_log'] = $row2['call_log'];
-                    $_SESSION['_' . $row1['group_id']]['contacts'] = $row2['contact'];
-                    $_SESSION['_' . $row1['group_id']]['accounts'] = $row2['account'];
-                    $_SESSION['_' . $row1['group_id']]['users'] = $row2['user'];
-                    $_SESSION['_' . $row1['group_id']]['groups'] = $row2['group'];
-                    $_SESSION['_' . $row1['group_id']]['sales'] = $row2['sales'];
-                    $_SESSION['_' . $row1['group_id']]['ticket'] = $row2['ticket'];
+                    $_SESSION['_' . $row1->group_id]['call_log'] = $row2->call_log;
+                    $_SESSION['_' . $row1->group_id]['contacts'] = $row2->contact;
+                    $_SESSION['_' . $row1->group_id]['accounts'] = $row2->account;
+                    $_SESSION['_' . $row1->group_id]['users'] = $row2->user;
+                    $_SESSION['_' . $row1->group_id]['groups'] = $row2->group;
+                    $_SESSION['_' . $row1->group_id]['sales'] = $row2->sales;
+                    $_SESSION['_' . $row1->group_id]['ticket'] = $row2->ticket;
                 }
+//                end
+
             }
 
-            $_SESSION['user_type'] = $re['user_is_admin'];
+
+            $_SESSION['user_type'] = $re->user_is_admin;
 
             $ip=$this->get_client_ip(); // get user ip
 
-            $sql = "INSERT INTO `user_login` VALUES (NULL,'$re[user_id]',SYSDATE(),NUll,'1','1','$ip')";  //add to user_login table
-            $this->db->query($sql);
+           //sql query start
+            $last_id=DB::table('user_login')
+                ->insertGetId(['user_id' => $re->user_id, 'user_login_time' => DATE('Y-m-d H:i:s'), 'user_session'=>1,'user_login_status'=>1,'ip'=>$ip]); //add to user_login table
+            //sql query end
 
-            $last_id = $this->db->insert_id();
+
             $_SESSION['user_login_id']=$last_id;
 
-            $this->log_model->add_log(" "," ","User Login"); // add a log
+            $log->add_log(" "," ","User Login");  // add a log
 
-            $query=$this->db->query("SELECT * FROM `s_admin` WHERE `id` = '1' ");
-            $result=$query->row_array();
 
-            $_SESSION['per_inquiry']= $result['Inquiry'] ;
-            $_SESSION['per_sales']= $result['Sales'] ;
-            $_SESSION['per_tickets']= $result['Tickets'] ;
+            //sql query
+            $query = DB::table('s_admin')
+                ->select('*')
+                ->where('id', 1)
+                ->get();
+            //sql query end
 
-            return 1;
+
+            foreach($query as $result) {
+                $_SESSION['per_inquiry'] = $result->Inquiry;
+                $_SESSION['per_sales'] = $result->Sales;
+                $_SESSION['per_tickets'] = $result->Tickets;
+            }
+
+            $_SESSION['login_user']=$username;
+            return redirect('main/home/view');
 
         }
 
-        $this->log_model->add_log("logging attempt",$ip,$username); // add a log
+        
+        $log->add_log("logging attempt ",$ip,$username);
 
         return("0");
 

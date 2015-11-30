@@ -25,4 +25,9 @@ class welcomecontroller extends Controller
     {
         return view('test.newtest');
     }
+
+    public function test2()
+    {
+        echo "AAAA";
+    }
 }

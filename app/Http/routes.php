@@ -22,9 +22,7 @@ Route::get('new','welcomecontroller@newfun');
 
 Route::get('test', 'welcomecontroller@test');
 
-Route::get('test1', function(){
-   return view('test.newtest');
-});
+Route::get('test1','call_log@test');
 
 Route::get('about','PageController@about');
 
@@ -34,12 +32,24 @@ Route::get('form', function(){
 
 Route::post('submitform','PageController@submit');
 
-Route::get('testdb','test_db@index');
+Route::get('graphs','graphs\Bar_revenue@generateGraphbarrev');
 
 Route::get('login', function(){
    return view('login');
 });
 
 Route::post('form/index_submit','formsubmit@login_submit');
+
+Route::post('make_plot/make','make_plot@make');
+
+Route::get('plot','make_plot@new1');
+
+Route::get('home', 'home@index');
+
+Route::get('call_log','call_log@index');
+
+Route::get('contact','contacts@index');
+
+Route::get('account','accounts@index');
 
 

@@ -24,7 +24,9 @@
     },
     "autoload-dev": {
         "classmap": [
-            "tests/TestCase.php"
+            "tests/TestCase.php",
+            "public/Library/jpgraph/src/jpgraph.php",
+            "public/Library/jpgraph/src/jpgraph_bar.php"
         ]
     },
     "scripts": {
