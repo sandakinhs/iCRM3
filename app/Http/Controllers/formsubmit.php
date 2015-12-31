@@ -45,7 +45,7 @@ class formsubmit extends Controller
 
         //sql query
         $query = DB::table('users')
-                       ->select('user_id', 'user_group', 'user_is_admin')
+                       ->select('id', 'user_group', 'user_is_admin')
                        ->where('user_name',$username  )
                        ->where('user_password',$password)
                        -> get();
@@ -55,14 +55,14 @@ class formsubmit extends Controller
         foreach($query as $re)
         {
 
-            $_SESSION['user_id'] = $re->user_id;
+            $_SESSION['user_id'] = $re->id;
 
         if($re->user_is_admin != "1") {   // check if user is admin or not
 
             //sql query
             $query1 = DB::table('user_login')
                 ->select('*')
-                ->where('user_id', $re->user_id)
+                ->where('user_id', $re->id)
                 ->where('user_login_status',1)
                 ->get();
             //sql query end
@@ -78,7 +78,7 @@ class formsubmit extends Controller
 
                 //sql query
                 DB::table('user_login')
-                    ->where('user_id', $re->user_id)
+                    ->where('user_id', $re->id)
                     ->update(['user_logout_time' => DATE('Y-m-d H:i:s'),'user_login_status' => 0]);
                 //sql query end
 
@@ -112,9 +112,15 @@ class formsubmit extends Controller
 
             $ip=$this->get_client_ip(); // get user ip
 
+            //sql query
+            DB::table('user_login')
+                ->where('user_id', $re->id)
+                ->update(['user_logout_time' => DATE('Y-m-d H:i:s'),'user_login_status' => 0]);
+            //sql query end
+
            //sql query start
             $last_id=DB::table('user_login')
-                ->insertGetId(['user_id' => $re->user_id, 'user_login_time' => DATE('Y-m-d H:i:s'), 'user_session'=>1,'user_login_status'=>1,'ip'=>$ip]); //add to user_login table
+                ->insertGetId(['user_id' => $re->id, 'user_login_time' => DATE('Y-m-d H:i:s'), 'user_session'=>1,'user_login_status'=>1,'ip'=>$ip]); //add to user_login table
             //sql query end
 
 
@@ -138,7 +144,7 @@ class formsubmit extends Controller
             }
 
             $_SESSION['login_user']=$username;
-            return redirect('main/home/view');
+            return redirect('home');
 
         }
 

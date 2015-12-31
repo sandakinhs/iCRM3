@@ -1,20 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82923e10-3367-4961-850d-1789530ff6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/accounts.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/contact/contact.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/contacts.php" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\work\iCRM3\app\Http\Controllers\test_db.php" afterPath="" />
+    <list default="true" id="8540db85-dfb7-48bd-831c-2c8e508b8e76" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/account/account.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/account.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/search/account_ad_search.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/account/account_contacts.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/account/account_create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/account/account_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/advance_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/other/assignedto.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/other/assignedto1.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/call_log.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/call_log/call_log_create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/call_log/call_log_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/search/calllog_ad_search.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/cart.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/cart.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/cart_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/contact/category/category.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/admin/category.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/category.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/category.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/contact/category/category_create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/admin/category_create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/contact/category/category_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/admin/category_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/check_privileges.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/search/contact_ad_search.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/contact/contact_call_log.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/contact/contact_create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/contact/contact_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/pop_ups/contactsearch.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/crm_log.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/admin/currency.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/currency.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/report/detailreport.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/group/group.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/custom/group.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/group.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/group/group_create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/group/group_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/groups.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/user/groupselect.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/home/home_settings.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/inquiry.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/admin/item.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/item.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/admin/item_create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/admin/item_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/logout.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/admin/main_category_load.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/call_log/new_call.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/page_setting.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/pagesetting.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/popup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/price_load.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/privilege.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/products_load.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/call_log/load/remark.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/reports.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/call_log/load/sale.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/sale.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/sale.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/sale_add_products.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/sales.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/search/sales_ad_search.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/sales_create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/sales_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/sales_edit_load.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/call_log/search.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/status_history.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/report/summaryreport.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/admin/tax.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/tax.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/admin/tax_create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/admin/tax_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/sale/test.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/call_log/load/ticket.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/ticket/ticket.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/ticket.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/search/ticket_ad_search.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/ticket/category/ticket_category.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/ticket_category.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/ticket/category/ticket_category_create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/ticket/category/ticket_category_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/ticket/ticket_create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/ticket/ticket_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/ticket/ticket_load.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/ticket_problem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/tickets.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/user/user.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/user.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/user/user_create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/user/user_edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/user_group.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/user/userprivilage.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/user/users_login.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/pop_ups/worksearch.blade.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\work\iCRM3\app\Article.php" afterPath="$PROJECT_DIR$/app/tax.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/accounts.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/accounts.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/contact/contact.blade.php" afterPath="$PROJECT_DIR$/resources/views/contact/contact.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/contacts.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/contacts.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/formsubmit.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/formsubmit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/iCRM3.iml" afterPath="$PROJECT_DIR$/.idea/iCRM3.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/welcomecontroller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/welcomecontroller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iCRM3.iws" />
@@ -31,111 +123,88 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="iCRM3" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/main.blade.php">
+      <file leaf-file-name="contact.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/contact/contact.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="195" column="56" selection-start-line="195" selection-start-column="56" selection-end-line="195" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sale.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/sale/sale.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="212" column="5" selection-start-line="210" selection-start-column="4" selection-end-line="212" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ticket.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/ticket/ticket.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="180" column="27" selection-start-line="180" selection-start-column="27" selection-end-line="180" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/account/account.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.4622302">
+              <caret line="187" column="5" selection-start-line="185" selection-start-column="3" selection-end-line="187" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account_ad_search.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/search/account_ad_search.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="call_log.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/call_log.php">
+      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/logout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="7" />
-              <folding>
-                <element signature="e#39#67#0#PHP" expanded="true" />
-                <marker date="1448871807050" expanded="true" signature="3198:3222" placeholder="SELECT * FRO..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contacts.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/contacts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-46.56">
-              <caret line="179" column="28" selection-start-line="179" selection-start-column="28" selection-end-line="179" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
-                <marker date="1448876679072" expanded="true" signature="3144:3627" placeholder="SELECT conta..contacts..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Call.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/functions/Call.php">
+      <file leaf-file-name="Log.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Log.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.6">
-              <caret line="167" column="28" selection-start-line="166" selection-start-column="11" selection-end-line="167" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="44" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="44" />
               <folding>
-                <element signature="e#50#78#0#PHP" expanded="true" />
-                <marker date="1448863566621" expanded="true" signature="286:358" placeholder="SELECT * FRO..." />
-                <marker date="1448863566621" expanded="true" signature="512:635" placeholder="SELECT COUNT..." />
-                <marker date="1448863566621" expanded="true" signature="1028:1201" placeholder="SELECT * FRO..." />
-                <marker date="1448863566621" expanded="true" signature="1347:1438" placeholder="SELECT * FRO..." />
-                <marker date="1448863566621" expanded="true" signature="1578:1623" placeholder="SELECT * FRO..." />
-                <marker date="1448863566621" expanded="true" signature="1771:1813" placeholder="SELECT * FRO..." />
-                <marker date="1448863566621" expanded="true" signature="1955:2019" placeholder="SELECT COUNT..." />
-                <marker date="1448863566621" expanded="true" signature="2210:2260" placeholder="SELECT * FRO..." />
-                <marker date="1448863566621" expanded="true" signature="2426:3920" placeholder="SELECT call_..." />
-                <marker date="1448863566621" expanded="true" signature="5462:6894" placeholder="SELECT call_..." />
-                <marker date="1448863566621" expanded="true" signature="7260:7308" placeholder="SELECT * FRO..." />
-                <marker date="1448863566621" expanded="true" signature="7519:8685" placeholder="SELECT call_..call_log..." />
+                <marker date="1450865185116" expanded="true" signature="809:979" placeholder="SELECT crm_l..crm_log..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/contact/contact.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.2">
-              <caret line="148" column="37" selection-start-line="148" selection-start-column="37" selection-end-line="148" selection-end-column="37" />
-              <folding>
-                <element signature="e#2029#2054#0#HTML" expanded="true" />
-                <element signature="e#4002#4019#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/navbar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="56.32">
-              <caret line="74" column="119" selection-start-line="74" selection-start-column="119" selection-end-line="74" selection-end-column="119" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accounts.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/accounts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43165466">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4038463">
-              <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -144,33 +213,90 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="php artisan" />
-      <command text="php artisan make:controller functions/Call --plain" />
-      <command text="php artisan " />
-      <command text="php artisan make:controller contacts" />
-      <command text="php artisan make:controller accounts" />
+      <command text="php artisan make:model tax" />
+      <command text="php artisan make:model ticket" />
+      <command text="php artisan make:model ticket_category" />
+      <command text="php artisan make:model ticket_problem" />
+      <command text="php artisan make:model call_log" />
+      <command text="php artisan make:model inquiry" />
+      <command text="php artisan make:model status_history" />
+      <command text="php artisan make:model page_setting" />
+      <command text="php artisan make:model home_page" />
+      <command text="php artisan make:model item" />
+      <command text="php artisan make:model category" />
+      <command text="php artisan route:list" />
+      <command text="php artisan make:controller currency" />
+      <command text="php artisan make:model currency" />
+      <command text="php artisan make:controller user" />
+      <command text="php artisan make:model group" />
+      <command text="php artisan make:model privilege" />
+      <command text="php artisan make:model user_group" />
+      <command text="php artisan make:model contact_category" />
+      <command text="php artisan make:controller contact_category" />
+      <command text="php artisan make:controller ticket_category" />
+      <command text="php artisan route:list" />
+      <command text="php artisan make:controller reports --plain" />
+      <command text="php artisan make:controller logout --plain" />
+      <command text="php artisan make:controller advance_search --plain" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/functions/Call.php" />
-        <option value="$PROJECT_DIR$/resources/views/view.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home/home_.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/home.php" />
+        <option value="$PROJECT_DIR$/app/ticket.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/other.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/item.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/category.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/tax.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/currency.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/user.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/groups.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/contact_category.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ticket_category.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Log.php" />
+        <option value="$PROJECT_DIR$/resources/views/crm_log.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/report/summaryreport.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/reports.php" />
+        <option value="$PROJECT_DIR$/resources/views/report/detailreport.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/call_log.php" />
+        <option value="$PROJECT_DIR$/resources/views/group/group_create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ticket/ticket_edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/sale/admin/category_edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/sale/sale_add_products.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/sale/admin/category.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/sale/admin/item_edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/sale/admin/item_create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/groupselect.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/user/user_edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/group/group_edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/account/account_edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/contact/category/category.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ticket/category/ticket_category.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/sale/sales_create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/check_privileges.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/functions/Call.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/contacts.php" />
-        <option value="$PROJECT_DIR$/resources/views/call_log/call_log_view.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/contact/contact.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/navbar.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/accounts.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/sales.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/tickets.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/logout.php" />
+        <option value="$PROJECT_DIR$/resources/views/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/login.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/search/account_ad_search.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/account/account.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/search/calllog_ad_search.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/call_log/call_log_view.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/search/contact_ad_search.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/contact/contact.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/search/sales_ad_search.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/sale/sale.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/search/ticket_ad_search.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/advance_search.php" />
+        <option value="$PROJECT_DIR$/resources/views/ticket/ticket.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -275,7 +401,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
+              <option name="myItemId" value="ticket" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -297,29 +423,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="contact" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCRM3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCRM3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="call_log" />
+              <option name="myItemId" value="search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -388,32 +492,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCRM3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iCRM3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="functions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -424,6 +502,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\work\iCRM3\public\assets\js\custom" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\work\iCRM3\public\assets\js\custom" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -459,35 +545,35 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="82923e10-3367-4961-850d-1789530ff6d4" name="Default" comment="" />
-      <created>1448620238051</created>
+      <changelist id="8540db85-dfb7-48bd-831c-2c8e508b8e76" name="Default" comment="" />
+      <created>1448938927502</created>
       <option name="number" value="Default" />
-      <updated>1448620238051</updated>
+      <updated>1448938927502</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16187595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21633889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47126436" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32840723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -508,286 +594,370 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/main.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/ticket/category/ticket_category_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ticket/category/ticket_category_create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ticket/category/ticket_category.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5179856">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/call_log/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/test.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/call_log.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/sales_edit_load.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="106" selection-start-line="37" selection-start-column="106" selection-end-line="37" selection-end-column="106" />
-          <folding>
-            <element signature="e#39#67#0#PHP" expanded="true" />
-            <marker date="1448871807050" expanded="true" signature="3198:3222" placeholder="SELECT * FRO..." />
-          </folding>
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/functions/pagesettings.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/sales_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/sales_create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/sale_add_products.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/products_load.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/price_load.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#50#78#0#PHP" expanded="true" />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT colum..columns..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT colum..columns..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/cart_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/cart.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/admin/tax_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/admin/tax.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/admin/main_category_load.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/admin/item_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/admin/item_create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/admin/item.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/admin/currency.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/admin/category_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/admin/category_create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.537037">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/admin/category.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.055028465">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/admin/tax_create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.055028465">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.4">
+          <caret line="10" column="8" selection-start-line="2" selection-start-column="0" selection-end-line="10" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/functions/Call.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="164" column="56" selection-start-line="164" selection-start-column="41" selection-end-line="164" selection-end-column="56" />
-          <folding>
-            <element signature="e#50#78#0#PHP" expanded="true" />
-            <marker date="1448863566621" expanded="true" signature="286:358" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="512:635" placeholder="SELECT COUNT..." />
-            <marker date="1448863566621" expanded="true" signature="1028:1201" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="1347:1438" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="1578:1623" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="1771:1813" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="1955:2019" placeholder="SELECT COUNT..." />
-            <marker date="1448863566621" expanded="true" signature="2210:2260" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="2426:3920" placeholder="SELECT call_..." />
-            <marker date="1448863566621" expanded="true" signature="5462:6894" placeholder="SELECT call_..." />
-            <marker date="1448863566621" expanded="true" signature="7260:7308" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="7519:8685" placeholder="SELECT call_..call_log..." />
-          </folding>
+        <state vertical-scroll-proportion="-9.6">
+          <caret line="118" column="42" selection-start-line="118" selection-start-column="42" selection-end-line="118" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/call_log/call_log_view.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/call_log.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/home_.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/functions/pagesettings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="47.88">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#50#78#0#PHP" expanded="true" />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT colum..columns..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT colum..columns..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1448610230495" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/view.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.68">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/home_.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.84">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1448867798200" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/main.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.84">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <marker date="1448868152704" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/call_log.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <element signature="e#39#67#0#PHP" expanded="true" />
-            <marker date="1448871807050" expanded="true" signature="3198:3222" placeholder="SELECT * FRO..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/functions/Call.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.6">
-          <caret line="167" column="28" selection-start-line="166" selection-start-column="11" selection-end-line="167" selection-end-column="28" />
-          <folding>
-            <element signature="e#50#78#0#PHP" expanded="true" />
-            <marker date="1448863566621" expanded="true" signature="286:358" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="512:635" placeholder="SELECT COUNT..." />
-            <marker date="1448863566621" expanded="true" signature="1028:1201" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="1347:1438" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="1578:1623" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="1771:1813" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="1955:2019" placeholder="SELECT COUNT..." />
-            <marker date="1448863566621" expanded="true" signature="2210:2260" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="2426:3920" placeholder="SELECT call_..." />
-            <marker date="1448863566621" expanded="true" signature="5462:6894" placeholder="SELECT call_..." />
-            <marker date="1448863566621" expanded="true" signature="7260:7308" placeholder="SELECT * FRO..." />
-            <marker date="1448863566621" expanded="true" signature="7519:8685" placeholder="SELECT call_..call_log..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/contacts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-46.56">
-          <caret line="179" column="28" selection-start-line="179" selection-start-column="28" selection-end-line="179" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.63309354">
+          <caret line="287" column="46" selection-start-line="287" selection-start-column="46" selection-end-line="287" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/call_log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5971222">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/sales.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.381295">
+          <caret line="295" column="39" selection-start-line="295" selection-start-column="39" selection-end-line="295" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/check_privileges.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.4">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/tickets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5755396">
+          <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/call_log/call_log_create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-51.84">
+          <caret line="117" column="81" selection-start-line="117" selection-start-column="72" selection-end-line="117" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/formsubmit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="44" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="44" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-            <marker date="1448876679072" expanded="true" signature="3144:3627" placeholder="SELECT conta..contacts..." />
+            <marker date="1450865185116" expanded="true" signature="809:979" placeholder="SELECT crm_l..crm_log..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/call_log/call_log_view.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.16">
-          <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="235" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/contact/contact.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.2">
-          <caret line="148" column="37" selection-start-line="148" selection-start-column="37" selection-end-line="148" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
           <folding>
-            <element signature="e#2029#2054#0#HTML" expanded="true" />
-            <element signature="e#4002#4019#0#HTML" expanded="true" />
+            <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/navbar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="56.32">
-          <caret line="74" column="119" selection-start-line="74" selection-start-column="119" selection-end-line="74" selection-end-column="119" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="195" selection-start-line="61" selection-start-column="195" selection-end-line="61" selection-end-column="195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/search/account_ad_search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/call_log/call_log_view.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4038463">
-          <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-          <folding />
+        <state vertical-scroll-proportion="0.79856116">
+          <caret line="279" column="43" selection-start-line="279" selection-start-column="43" selection-end-line="279" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/search/contact_ad_search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48920864">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/search/calllog_ad_search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/search/sales_ad_search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.88">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/accounts.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9784173">
+          <caret line="221" column="47" selection-start-line="221" selection-start-column="47" selection-end-line="221" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/search/ticket_ad_search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43165466">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/advance_search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8561151">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82733816">
+          <caret line="219" column="52" selection-start-line="219" selection-start-column="52" selection-end-line="219" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/contact/contact.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="195" column="56" selection-start-line="195" selection-start-column="56" selection-end-line="195" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/sale/sale.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="212" column="5" selection-start-line="210" selection-start-column="4" selection-end-line="212" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ticket/ticket.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="180" column="27" selection-start-line="180" selection-start-column="27" selection-end-line="180" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/account/account.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4622302">
+          <caret line="187" column="5" selection-start-line="185" selection-start-column="3" selection-end-line="187" selection-end-column="5" />
           <folding />
         </state>
       </provider>

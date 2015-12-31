@@ -40,7 +40,7 @@
 
         $status = $this->login_model->test123('aa');
 
-        echo $status;
+       // echo $status;
 //$status=$ob1->logincheck($username,$password);   //check user name and password
 //}
 //if($status==1)
@@ -51,14 +51,14 @@
 //    header("Location:s_admin.php");
 //}else {
 
-        echo $status;
+        //echo $status;
     }
     ?>
 
     <html>
     <body>
 
-    {{ asset('d') }}
+
     <div class="row">
 
         <div class="col-md-4">
