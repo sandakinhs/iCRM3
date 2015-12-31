@@ -108,18 +108,18 @@
                 <?php
                 foreach($selected_columns as $b){
 
-                if($b=="customer_id"){ ?>
+                if($b->column_name=="customer_id"){ ?>
                 <td><a href="#" onclick="pop_up('popup_sales.php?id=<?php echo $row->id; ?>','1');"><?php echo $row->contact_firstname;  ?><a> </td>
                 <?php
-                }elseif ($b=="owner_id") {
+                }elseif ($b->column_name=="owner_id") {
                     echo "<td><a1>".$row->owner."</a1></td>";
-                }elseif ($b=="total") {
-                    echo "<td><a1>".$currency->toMoney($row->total)." &nbsp &nbsp </a1></td>";
-                }elseif ($b=="modified_by") {
+                }elseif ($b->column_name=="total") {
+                    echo "<td><a1>".$row->total." &nbsp &nbsp </a1></td>";
+                }elseif ($b->column_name=="modified_by") {
                     echo "<td><a1>".$row->moddi."</a1></td>";
-                }elseif ($b=="assignedto") {
+                }elseif ($b->column_name=="assignedto") {
                     echo "<td><a1>".$row->assigned."</a1></td>";
-                }elseif ($b=="group") {
+                }elseif ($b->column_name=="group") {
                     echo "<td><a1>".$row->group_name."</a1></td>";
                 }else{
                     echo "<td><a1>".$row->{$b->column_name}."</a1></td>";

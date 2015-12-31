@@ -95,16 +95,16 @@
                 <?php
                 foreach($selected_columns as $b){
 
-                if($b=="contact"){ ?>
+                if($b->column_name=="contact"){ ?>
                 <td><a href="#" onclick="pop_up('popup_ticket.php?id=<?php echo $row->id; ?>','1');"><?php echo $row->contact_firstname;  ?></a> </td>
                 <?php
-                }elseif ($b=="owner") {
+                }elseif ($b->column_name=="owner") {
                     echo "<td><a1>".$row->user_name."</a1></td>";
-                }elseif ($b=="group") {
+                }elseif ($b->column_name=="group") {
                     echo "<td><a1>".$row->group_name."</a1></td>";
-                }elseif ($b=="assignedto") {
+                }elseif ($b->column_name=="assignedto") {
                     echo "<td><a1>".$row->assign."</a1></td>";
-                }elseif ($b=="modified_by") {
+                }elseif ($b->column_name=="modified_by") {
                     echo "<td><a1>".$row->modif."</a1></td>";
                 }
                 else{

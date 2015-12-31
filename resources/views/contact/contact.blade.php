@@ -120,7 +120,7 @@
                         echo "<td><a1>".$row->Assign."</a1></td>";
                     }elseif ($b->column_name =="contact_firstname") {
                         echo "<td><a href='".$_SERVER['PHP_SELF']."?loc=contact&action=edit&cid=".$row->id." ' >".$row->{$b->column_name}."</a></td>";
-                    }elseif ($b->column_name=="contact_category") {
+                    //}elseif ($b->column_name=="contact_category") {
                         //echo "<td><a1>".$row->category."</a1></td>";
                     }else{
                         echo "<td><a1>".$row->{$b->column_name}."</a1></td>";
