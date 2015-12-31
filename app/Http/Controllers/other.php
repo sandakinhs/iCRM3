@@ -99,6 +99,15 @@ class other extends Controller
 
         $pagesetting->addnew($_POST['rows'],$_SESSION['tablename'],'0');
 
+        if($_SESSION['tablename'] == "contacts"){
+            return redirect("contact");
+        }elseif($_SESSION['tablename'] == "accounts")
+        {
+            return redirect("account");
+        }elseif($_SESSION['tablename'] == "sales")
+        {
+            return redirect("sale");
+        }
         return redirect($_SESSION['tablename']);
     }
 
