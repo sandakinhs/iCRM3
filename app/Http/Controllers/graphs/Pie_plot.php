@@ -53,15 +53,15 @@ class Pie_plot extends Controller
 
         if ($type == "week") {
 
-            $sql = "SELECT  count(*) AS counts FROM `call_log` WHERE YEARWEEK(`call_created_time`) = YEARWEEK('$date') AND `deleted` = '0' AND `call_type` = 'Inquiry' ";
-            $sql2 = "SELECT count(*) AS counts FROM `sales` WHERE YEARWEEK(`created_time`) = YEARWEEK('$date') AND `deleted` = '0' ";
-            $sql3 = "SELECT count(*) AS counts FROM `ticket` WHERE YEARWEEK(`created_time`) = YEARWEEK('$date') AND `deleted` = '0' ";
+            $sql = "SELECT  count(*) AS counts FROM `call_log` WHERE YEARWEEK(`created_at`) = YEARWEEK('$date') AND `deleted` = '0' AND `call_type` = 'Inquiry' ";
+            $sql2 = "SELECT count(*) AS counts FROM `sales` WHERE YEARWEEK(`created_at`) = YEARWEEK('$date') AND `deleted` = '0' ";
+            $sql3 = "SELECT count(*) AS counts FROM `ticket` WHERE YEARWEEK(`created_at`) = YEARWEEK('$date') AND `deleted` = '0' ";
 
         }else{
 
-            $sql = "SELECT  count(*) AS counts FROM `call_log` WHERE (`call_created_time` BETWEEN '$start' AND '$end') AND `deleted` = '0' AND `call_type` = 'Inquiry' ";
-            $sql2 = "SELECT count(*) AS counts FROM `sales` WHERE (`created_time` BETWEEN '$start' AND '$end' ) AND `deleted` = '0' ";
-            $sql3 = "SELECT count(*) AS counts FROM `ticket` WHERE (`created_time` BETWEEN '$start' AND '$end' ) AND `deleted` = '0' ";
+            $sql = "SELECT  count(*) AS counts FROM `call_log` WHERE (`created_at` BETWEEN '$start' AND '$end') AND `deleted` = '0' AND `call_type` = 'Inquiry' ";
+            $sql2 = "SELECT count(*) AS counts FROM `sales` WHERE (`created_at` BETWEEN '$start' AND '$end' ) AND `deleted` = '0' ";
+            $sql3 = "SELECT count(*) AS counts FROM `ticket` WHERE (`created_at` BETWEEN '$start' AND '$end' ) AND `deleted` = '0' ";
 
         }
 

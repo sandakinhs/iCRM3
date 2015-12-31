@@ -101,9 +101,11 @@ class other extends Controller
 
         if($_SESSION['tablename'] == "contacts"){
             return redirect("contact");
+
         }elseif($_SESSION['tablename'] == "accounts")
         {
             return redirect("account");
+
         }elseif($_SESSION['tablename'] == "sales")
         {
             return redirect("sale");

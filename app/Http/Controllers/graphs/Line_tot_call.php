@@ -50,11 +50,11 @@ $date = date('Y', $date);
 
    if ($type == "week") {
 
- $sql=DB::select( DB::raw("SELECT COUNT(*) AS 'count', `call_type` FROM `call_log` WHERE YEARWEEK(call_created_time,1) LIKE '$date' GROUP BY `call_type` ORDER BY `call_type`"));
+ $sql=DB::select( DB::raw("SELECT COUNT(*) AS 'count', `call_type` FROM `call_log` WHERE YEARWEEK(created_at,1) LIKE '$date' GROUP BY `call_type` ORDER BY `call_type`"));
 
    } else {
 
- $sql=DB::select( DB::raw("SELECT COUNT(*) AS 'count', `call_type` FROM `call_log` WHERE `call_created_time` LIKE '$date%' GROUP BY `call_type` ORDER BY `call_type`"));
+ $sql=DB::select( DB::raw("SELECT COUNT(*) AS 'count', `call_type` FROM `call_log` WHERE `created_at` LIKE '$date%' GROUP BY `call_type` ORDER BY `call_type`"));
    }
 
 

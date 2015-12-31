@@ -51,11 +51,11 @@ class Pie_plot_revenue extends Controller
 
         if ($type == "week") {
 
-            $sql = "SELECT `id` FROM `sales` WHERE week(`created_time`) = week('$date') AND `deleted` = '0' ";
+            $sql = "SELECT `id` FROM `sales` WHERE week(`created_at`) = week('$date') AND `deleted` = '0' ";
 
         }else{
 
-            $sql = "SELECT `id` FROM `sales` WHERE (`created_time` BETWEEN '$start' AND '$end') AND `deleted` = '0'";
+            $sql = "SELECT `id` FROM `sales` WHERE (`created_at` BETWEEN '$start' AND '$end') AND `deleted` = '0'";
 
         }
 

@@ -52,11 +52,11 @@ class Bar_revenue extends Controller
 
         if ($type == "week") {
 
-             $sql=DB::select( DB::raw("SELECT `id` FROM `sales` WHERE YEARWEEK(`created_time`) = YEARWEEK('$date') AND `deleted` = '0' "));
+             $sql=DB::select( DB::raw("SELECT `id` FROM `sales` WHERE YEARWEEK(`created_at`) = YEARWEEK('$date') AND `deleted` = '0' "));
 
         } else {
 
-            $sql=DB::select( DB::raw("SELECT `id` FROM `sales` WHERE (`created_time` BETWEEN '$start' AND '$end') AND `deleted` = '0' "));
+            $sql=DB::select( DB::raw("SELECT `id` FROM `sales` WHERE (`created_at` BETWEEN '$start' AND '$end') AND `deleted` = '0' "));
         }
 
 

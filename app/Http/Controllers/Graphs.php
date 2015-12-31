@@ -18,16 +18,16 @@ class Graphs extends Controller
 
 
         $sql = "SELECT contact_no, customer, status, type, time FROM (
-	    			 SELECT contacts.contact_no , contacts.contact_firstname AS customer, sales.status AS status , IF(sales.total != '','Sales',1) AS type, sales.created_time AS time FROM sales
+	    			 SELECT contacts.contact_no , contacts.contact_firstname AS customer, sales.status AS status , IF(sales.total != '','Sales',1) AS type, sales.created_at AS time FROM sales
 							  INNER JOIN contacts ON
 							  				sales.customer_id = contacts.id WHERE sales.call_log_id = '0' AND sales.deleted = '0'
 	                 UNION ALL
-	                 SELECT contacts.contact_no, contacts.contact_firstname AS customer, ticket.status AS status,IF(ticket.id != '','Ticket',1) AS type, ticket.created_time AS time FROM ticket
+	                 SELECT contacts.contact_no, contacts.contact_firstname AS customer, ticket.status AS status,IF(ticket.id != '','Ticket',1) AS type, ticket.created_at AS time FROM ticket
 	    					INNER JOIN contacts ON
 	    									ticket.contact_id = contacts.id WHERE ticket.call_log_id = '0' AND ticket.deleted = '0'
 
 				     UNION ALL
-			         SELECT call_log.cli, contacts.contact_firstname , CONCAT ( COALESCE(stat.status,'') , COALESCE(stat1.status,''), COALESCE(stat2.status,'')) , call_type, call_log.call_created_time FROM call_log
+			         SELECT call_log.cli, contacts.contact_firstname , CONCAT ( COALESCE(stat.status,'') , COALESCE(stat1.status,''), COALESCE(stat2.status,'')) , call_type, call_log.created_at FROM call_log
 	                 		INNER JOIN contacts ON
 			                                call_log.contact_id=contacts.id
 	    					LEFT OUTER JOIN inquiry AS stat ON
@@ -46,16 +46,16 @@ class Graphs extends Controller
 
 
         $sql = "SELECT contact_no, customer, status, type, time FROM (
-	    			 SELECT contacts.contact_no , contacts.contact_firstname AS customer, sales.status AS status , IF(sales.total != '','Sales',1) AS type, sales.created_time AS time FROM sales
+	    			 SELECT contacts.contact_no , contacts.contact_firstname AS customer, sales.status AS status , IF(sales.total != '','Sales',1) AS type, sales.created_at AS time FROM sales
 							  INNER JOIN contacts ON
 							  				sales.customer_id = contacts.id WHERE sales.call_log_id = '0' AND sales.deleted = '0'
 	                 UNION ALL
-	                 SELECT contacts.contact_no, contacts.contact_firstname AS customer, ticket.status AS status,IF(ticket.id != '','Ticket',1) AS type, ticket.created_time AS time FROM ticket
+	                 SELECT contacts.contact_no, contacts.contact_firstname AS customer, ticket.status AS status,IF(ticket.id != '','Ticket',1) AS type, ticket.created_at AS time FROM ticket
 	    					INNER JOIN contacts ON
 	    									ticket.contact_id = contacts.id WHERE ticket.call_log_id = '0' AND ticket.deleted = '0'
 
 				     UNION ALL
-			         SELECT call_log.cli, contacts.contact_firstname , CONCAT ( COALESCE(stat.status,'') , COALESCE(stat1.status,''), COALESCE(stat2.status,'')) , call_type, call_log.call_created_time FROM call_log
+			         SELECT call_log.cli, contacts.contact_firstname , CONCAT ( COALESCE(stat.status,'') , COALESCE(stat1.status,''), COALESCE(stat2.status,'')) , call_type, call_log.created_at FROM call_log
 	                 		INNER JOIN contacts ON
 			                                call_log.contact_id=contacts.id
 	    					LEFT OUTER JOIN inquiry AS stat ON
