@@ -67,6 +67,7 @@ class accounts extends Controller
         $result= new LengthAwarePaginator($currentPageSearchResults, count($collection), $perPage);
 
         //return this data to the view
+
         return View::make('account.account',compact('table_headings','selected_columns','result'));
     }
 

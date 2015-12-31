@@ -96,20 +96,22 @@
 
                 <tr>
                     <?php
+
+
                     foreach($selected_columns as $b){
 
-                        if($b=="group_id"){
+                        if($b->column_name =="group_id"){
                             echo "<td><a1>".$row->group_name."</a1></td>";
-                        }elseif ($b=="modified_by") {
+                        }elseif ($b->column_name =="modified_by") {
                             echo "<td><a1>".$row->modified."</a1></td>";
-                        }elseif ($b=="owner") {
+                        }elseif ($b->column_name =="owner") {
                             echo "<td><a1>".$row->user_name."</a1></td>";
-                        }elseif ($b=="account_name") {
+                        }elseif ($b->column_name =="account_name") {
                             echo "<td><a href='".$_SERVER['PHP_SELF']."?loc=account&action=edit&aid=".$row->id." ' >".$row->{$b->column_name}."</a></td>";
-                        }elseif ($b=="assignedto") {
-                            echo "<td><a1>".$row->assign."</a1></td>";
+                        }elseif ($b->column_name =="assignedto") {
+                           echo "<td><a1>".$row->assign."</a1></td>";
                         }else{
-                            echo "<td><a1>".$row->{$b->column_name}."</a1></td>";
+                           echo "<td><a1>".$row->{$b->column_name}."</a1></td>";
                         }
 
                     }

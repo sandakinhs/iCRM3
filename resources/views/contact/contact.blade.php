@@ -112,16 +112,16 @@
                 <?php
                 foreach($selected_columns as $b){
 
-                    if($b=="contact_owner"){
+                    if($b->column_name =="contact_owner"){
                         echo "<td><a1>".$row->user_name."</a1></td>";
-                    }elseif ($b=="group_id") {
+                    }elseif ($b->column_name =="group_id") {
                         echo "<td><a1>".$row->group_name."</a1></td>";
-                    }elseif ($b=="assignedto") {
+                    }elseif ($b->column_name =="assignedto") {
                         echo "<td><a1>".$row->Assign."</a1></td>";
-                    }elseif ($b=="contact_firstname") {
+                    }elseif ($b->column_name =="contact_firstname") {
                         echo "<td><a href='".$_SERVER['PHP_SELF']."?loc=contact&action=edit&cid=".$row->id." ' >".$row->{$b->column_name}."</a></td>";
-                    }elseif ($b=="contact_category") {
-                        echo "<td><a1>".$row->category."</a1></td>";
+                    }elseif ($b->column_name=="contact_category") {
+                        //echo "<td><a1>".$row->category."</a1></td>";
                     }else{
                         echo "<td><a1>".$row->{$b->column_name}."</a1></td>";
                     }
